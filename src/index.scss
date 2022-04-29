@@ -1,0 +1,12 @@
+@use 'styles/colors' as *;
+@use 'styles/fonts' as *;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $font-family-poppins;
+}
