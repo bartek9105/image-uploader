@@ -1,0 +1,20 @@
+@use '../../styles/colors' as *;
+
+.fakeInput {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $color-catskill-white;
+	width: 338px;
+	height: 219px;
+	border: 1px dashed $color-jordy-blue;
+	border-radius: 12px;
+}
+
+.hint {
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: -0.035em;
+
+	color: $color-silver;
+}

@@ -1,15 +1,13 @@
 import Layout from './components/Layout'
-import { useDropzone } from 'react-dropzone'
+import UploadFile from './components/UploadFile'
+import { useUploadFile } from './hooks/useUploadFile'
 
 function App() {
-	const { draggedFiles, getRootProps, getInputProps } = useDropzone()
+	const { setFile } = useUploadFile()
 
 	return (
 		<Layout>
-			<div {...getRootProps({ className: 'dropzone' })}>
-				<input {...getInputProps()} />
-				<p>Drag 'n' drop some files here, or click to select files</p>
-			</div>
+			<UploadFile onDrop={(acceptedFiles) => setFile(acceptedFiles)} />
 		</Layout>
 	)
 }
